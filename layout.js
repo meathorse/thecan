@@ -10,7 +10,7 @@ class globalnav extends HTMLElement{
     connectedCallback() {
         this.innerHTML = `
      <nav>
-        <a href="https://meathorse.github.io/thecan/index.html"><img src="thecan/can.png" style="width:64px; height:90px;"></a> |
+        <a href="https://meathorse.github.io/thecan/index.html"><img src="/thecan/can.png" style="width:64px; height:90px;"></a> |
         <a href="tech_index.html">Technology</a> |
         <a href="linux_index.html">Linux</a> |
         <a href="sci_index.html">Science</a> |
