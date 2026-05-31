@@ -10,11 +10,11 @@ class globalnav extends HTMLElement{
     connectedCallback() {
         this.innerHTML = `
      <nav>
-        <a href="https://meathorse.github.io/thecan/index.html"><img src="/thecan/can.png" style="width:64px; height:90px;"></a> |
-        <a href="tech_index.html">Technology</a> |
-        <a href="linux_index.html">Linux</a> |
-        <a href="sci_index.html">Science</a> |
-        <a href="autos_index.html">Autos</a> 
+        <a href="/thecan/index.html"><img src="/thecan/can.png" style="width:64px; height:90px;"></a> |
+        <a href="/thecan/html/tech_index.html">Technology</a> |
+        <a href="/thecan/html/linux_index.html">Linux</a> |
+        <a href="/thecan/html/sci_index.html">Science</a> |
+        <a href="/thecan/html/autos_index.html">Autos</a> 
         
     </nav>
                 `
