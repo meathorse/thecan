@@ -1,5 +1,10 @@
 class globalheader extends HTMLElement {
     connectedCallback() {
+        if (location.hostname === "meathorse.github.io") {
+            const base = document.createElement("base");
+            base.href = "/thecan/";
+            document.head.appendChild(base);
+        }
         this.innerHTML = `
         <h1>TheCan</h1>
         <h2>The empty can rattles the most</h2>`;
@@ -10,11 +15,11 @@ class globalnav extends HTMLElement{
     connectedCallback() {
         this.innerHTML = `
      <nav>
-        <a href="/thecan/index.html"><img src="/thecan/can.png" style="width:64px; height:90px;"></a> |
-        <a href="/thecan/html/tech_index.html">Technology</a> |
-        <a href="/thecan/html/linux_index.html">Linux</a> |
-        <a href="/thecan/html/sci_index.html">Science</a> |
-        <a href="/thecan/html/autos_index.html">Autos</a> 
+        <a href="/index.html"><img src="/can.png" style="width:64px; height:90px;"></a> |
+        <a href="/html/tech_index.html">Technology</a> |
+        <a href="/html/linux_index.html">Linux</a> |
+        <a href="/html/sci_index.html">Science</a> |
+        <a href="/html/autos_index.html">Autos</a> 
         
     </nav>
                 `
