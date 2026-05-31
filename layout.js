@@ -11,10 +11,10 @@ class globalnav extends HTMLElement{
         this.innerHTML = `
      <nav>
         <a href="/index.html"><img src="/can.png" style="width:64px; height:90px;"></a> |
-        <a href="/html/tech_index.html">Technology</a> |
-        <a href="/html/linux_index.html">Linux</a> |
-        <a href="/html/sci_index.html">Science</a> |
-        <a href="/html/autos_index.html">Autos</a> 
+        <a href="tech_index.html">Technology</a> |
+        <a href="linux_index.html">Linux</a> |
+        <a href="sci_index.html">Science</a> |
+        <a href="autos_index.html">Autos</a> 
         
     </nav>
                 `
