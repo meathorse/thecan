@@ -2,12 +2,20 @@ class globalheader extends HTMLElement {
     constructor() {
         super();
 
-        // Inject <base> ONLY on GitHub Pages
-        if (location.hostname === "meathorse.github.io") {
-            const base = document.createElement("base");
-            base.href = "/thecan/";
-            document.head.appendChild(base);
-        }
+        let basePath;
+if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
+    // Local path
+    basePath = '/thecan/'; 
+} else {
+    // Web path
+    basePath = 'https://meathorse.github.io/thecan/';
+}
+        // // Inject <base> ONLY on GitHub Pages
+        // if (location.hostname === "https://meathorse.github.io") {
+        //     const base = document.createElement("base");
+        //     base.href = "/thecan/";
+        //     document.head.appendChild(base);
+        // }
     }
 
     connectedCallback() {
