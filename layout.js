@@ -8,7 +8,7 @@ if (window.location.hostname === 'localhost' || window.location.hostname === '12
     basePath = '/thecan/'; 
 } else {
     // Web path
-    basePath = 'https://meathorse.github.io/thecan/';
+    basePath = '/thecan/';
 }
         // // Inject <base> ONLY on GitHub Pages
         // if (location.hostname === "https://meathorse.github.io") {
