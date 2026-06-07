@@ -1,20 +1,8 @@
+const base = document.createElement("base");
+base.href = "/thecan/";
+document.head.appendChild(base);
+
 class globalheader extends HTMLElement {
-    constructor() {
-        super();
-
-        let basePath;
-
-        if (
-            window.location.hostname === 'localhost' ||
-            window.location.hostname === '127.0.0.1' ||
-            window.location.protocol === 'file:'
-        ) {
-            // Local root
-            basePath = '/thecan/';
-        } else {
-            // GitHub Pages root
-            basePath = '/thecan/';
-        }
 
     connectedCallback() {
         this.innerHTML = `
@@ -27,11 +15,11 @@ class globalnav extends HTMLElement{
     connectedCallback() {
         this.innerHTML = `
      <nav>
-        <a href="/index.html">Home</a> |
-        <a href="/html/tech_index.html">Technology</a> |
-        <a href="/html/linux_index.html">Linux</a> |
-        <a href="/html/sci_index.html">Science</a> |
-        <a href="/html/autos_index.html">Autos</a> 
+        <a href="index.html">Home</a> |
+        <a href="html/tech_index.html">Technology</a> |
+        <a href="html/linux_index.html">Linux</a> |
+        <a href="html/sci_index.html">Science</a> |
+        <a href="html/autos_index.html">Autos</a> 
         
     </nav>
                 `
