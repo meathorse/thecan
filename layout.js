@@ -10,28 +10,11 @@ class globalheader extends HTMLElement {
             window.location.protocol === 'file:'
         ) {
             // Local root
-            basePath = '/';
+            basePath = '/thecan/';
         } else {
             // GitHub Pages root
             basePath = '/thecan/';
         }
-
-
-//         let basePath;
-// // if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
-// //     // Local path
-// //     basePath = '/thecan/';
-// // } else {
-// //     // Web path
-// //     basePath = '/';
-// // }
-// //         // // Inject <base> ONLY on GitHub Pages
-// //         // if (location.hostname === "https://meathorse.github.io") {
-// //         //     const base = document.createElement("base");
-// //         //     base.href = "/thecan/";
-// //         //     document.head.appendChild(base);
-// //         // }
-// //     }
 
     connectedCallback() {
         this.innerHTML = `
