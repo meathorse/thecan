@@ -79,10 +79,11 @@ global-footer a:hover {
     color: #FF6B01;
 }
 
-global-footer active {
+global-footer a.active {
     background: #FF6B01;
     color: #FFFFFF;
 }
+
 a:link {
     color: #FF6B01;
     text-decoration: none;

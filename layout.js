@@ -8,7 +8,7 @@ class globalheader extends HTMLElement {
         this.innerHTML = `
 <div class="brand">
     <div class="brand-logo">
-        <a href="index.html"><img src="can.png"></a>
+        <a href="index.html"><img src="/thecan/can.png"></a>
     </div>
 
     <div class="brand-text">
