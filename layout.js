@@ -16,21 +16,21 @@ class globalheader extends HTMLElement {
         <h2>The empty can rattles the most</h2>
     </div>
 </div>`;
-            
     }
 }
 
 class globalnav extends HTMLElement{
     connectedCallback() {
         this.innerHTML = `
+     <div class="btn-bar">
      <nav>
-        <a href="index.html">Home</a> |
-        <a href="html/tech_index.html">Technology</a> |
-        <a href="html/linux_index.html">Linux</a> |
-        <a href="html/sci_index.html">Science</a> |
-        <a href="html/autos_index.html">Autos</a> 
-        
-    </nav>
+        <a class="btn-link" href="index.html">Home</a> |
+        <a class="btn-link" href="html/tech_index.html">Tech</a> |
+        <a class="btn-link" href="html/wheels_index.html">Wheels</a> |
+        <a class="btn-link" href="html/nz_index.html">NZ</a> |
+        <a class="btn-link" href="html/random_index.html">Random</a> 
+     </nav>
+     </div>
                 `
     // Highlight active link
         const links = this.querySelectorAll("a");
@@ -49,14 +49,28 @@ class globalnav extends HTMLElement{
 class globalfooter extends HTMLElement{
     connectedCallback() {
         this.innerHTML = `
+            <div class="btn-bar">
             <nav>
-                <a href="index.html">Home</a>
-                <a href="html/tech_index.html">Technology</a>
-                <a href="html/linux_index.html">Linux</a>
-                <a href="html/sci_index.html">Science</a>
-                <a href="html/autos_index.html">Autos</a> 
+                <a class="btn-link" href="index.html">Home</a> |
+                <a class="btn-link" href="html/tech_index.html">Tech</a> |
+                <a class="btn-link" href="html/wheels_index.html">Wheels</a> |
+                <a class="btn-link" href="html/nz_index.html">NZ</a> |
+                <a class="btn-link" href="html/random_index.html">Random</a>
             </nav>
-            <h5>Author: TC <br> © 2026 <br> <a href="mailto:meathorse@hotmail.com">Contact</a></h5>`
+            </div>
+            <h5>Author: TC  |  © 2026 <br> <a href="mailto:meathorse@hotmail.com">Contact</a></h5>
+            `
+
+            const links = this.querySelectorAll("a");
+        const current = window.location.pathname;
+        const currentPage = current.split("/").pop();
+
+        links.forEach(link => {
+            const linkPage = link.getAttribute("href").split("/").pop();
+            if (currentPage === linkPage) {
+                link.classList.add("active");
+            }
+        });
     }
 }
 

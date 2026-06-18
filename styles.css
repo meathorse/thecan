@@ -1,4 +1,7 @@
-/* global-header logo */
+/* ------------------------------
+   GLOBAL HEADER
+------------------------------ */
+
 .brand {
     display: flex;
     align-items: center;
@@ -12,96 +15,112 @@
     width: auto;
     display: block;
     max-width: 100%;
+    border: 0;
 }
 
+/* Headings inside global-header */
+
 global-header h1 {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
     margin: 0;
-    padding: 5px;
-    font-size: 50px;
+    font-size: 3rem;
     color: #FF6B01;
 }
 
 global-header h2 {
-    display: flex;
-    flex-direction: column;
     margin: 5px 0 0;
-    padding: 5px;
+    padding-bottom: 25px;
     font-size: 1.2rem;
     color: #353535;
 }
 
-global-nav a {
-    color: #FFFFFF;
-    text-decoration: none;
-    margin: 0 12px;
-    padding: 6px 10px;
+/* ------------------------------
+   BUTTON-LINK NAVIGATION
+------------------------------ */
+
+.btn-link {
+    display: inline-block;
+    padding: 6px 12px;
+    margin: 0 8px;
     border-radius: 4px;
     font-weight: 500;
-}
-
-global-nav nav {
+    text-decoration: none;
+    color: #FFFFFF;
     background: #353535;
-    padding: 10px 0;
-    text-align: center;
+    transition: background 0.2s ease, color 0.2s ease;
 }
 
-global-nav a:hover {
-    color: #FF6B01;
-}
-
-global-nav a.active {
+.btn-link:hover {
     background: #FF6B01;
     color: #FFFFFF;
 }
 
-global-footer a {
-    color: #FFFFFF;
-    text-decoration: none;
-    margin: 0 12px;
-    padding: 6px 10px;
-    border-radius: 4px;
-    font-weight: 500;
-}
-
-global-footer {
-    display: block;
-    background: #353535;
-    color: #FFFFFF;
-    padding: 10px 0;
-    text-align: center;
-}
-
-global-footer a:hover {
-    text-decoration: underline;
-    color: #FF6B01;
-}
-
-global-footer a.active {
+.btn-link.active {
     background: #FF6B01;
     color: #FFFFFF;
 }
 
-a:link {
-    color: #FF6B01;
-    text-decoration: none;
+.btn-bar {
+    background: #353535; /* block colour */
+    padding: 15px;
+    border-radius: 6px;
+
+    display: flex;
+    justify-content: center;      /* centre the buttons */
+    gap: 20px;                    /* even spacing */
+    flex-wrap: wrap;              /* wrap on small screens */
 }
 
-a:visited {
-    color: #CC5500;
+/* ------------------------------
+   CONTACT H5
+------------------------------ */
+
+h5 {
+display: flex;
+flex-direction: column;
+align-items: center;
 }
 
-a:hover {
-    color: #E65F00;
-    text-decoration: underline; 
+/* ------------------------------
+   IMAGES
+------------------------------ */
+
+img {
+    max-width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
 }
+
+/* ------------------------------
+   HGROUP CONTENT BLOCK
+------------------------------ */
+
+hgroup {
+max-width: 960px;
+padding: 2%;
+margin: auto;
+background-color: #ff6b012f;
+}
+
+hgroup h1 {color: #FF6B01;}
+hgroup h2 {color: #353535;}
+hgroup p {color: #353535;}
+hgroup a {color: #353535;}
+hgroup a:hover {color: #FF6B01;}
+
+/* ------------------------------
+   PAGE BODY
+------------------------------ */
 
 body {
-    color: #353535
+max-width: 960px;
+padding: 2%;
+margin: auto;
 }
-/*
+
+
+
+/* Palette:
 #353535 Dark Grey Background
 #FF6B01 Orange Actions
 #FFFFFF White text
